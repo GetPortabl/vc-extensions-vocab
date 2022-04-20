@@ -1,0 +1,25 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@protected": true,
+    
+    "id": "@id",
+    "type": "@type",
+    
+    "TraceableEvidence": {
+      "@id": "https://portabl-id.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#TraceableEvidence",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "kyc": "https://portabl-id.github.io/vc-extensions-vocab#",
+        
+        "mime-type": "kyc:mime-type",
+        "evidencedClaim": "kyc:evidencedClaim"
+      }
+    }
+  }
+}
