@@ -6,8 +6,8 @@
     "id": "@id",
     "type": "@type",
     
-    "TraceableEvidence": {
-      "@id": "https://portabl-id.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#TraceableEvidence",
+    "DocumentEvidence2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#DocumentEvidence2023",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -15,11 +15,75 @@
         "id": "@id",
         "type": "@type",
 
-        "kyc": "https://portabl-id.github.io/vc-extensions-vocab#",
+        "root": "https://getportabl.github.io/vc-extensions-vocab#",
         
-        "mime-type": "kyc:mime-type",
-        "evidencedClaim": "kyc:evidencedClaim"
+        "verifier": { "@id": "root:verifier", "@type": "@id" },
+        
+        "subjectPresence": "root:subjectPresence",
+        
+        "documentPresence": "root:documentPresence"
+        
+        "evidenceDocument": "root:evidenceDocument",
+        
+        "evidenceSubject": "root:evidenceSubject"
       }
-    }
+    },
+    
+    "LookupEvidence2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#LookupEvidence2023",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "root": "https://getportabl.github.io/vc-extensions-vocab#",
+        
+        "verifier": { "@id": "root:verifier", "@type": "@id" },
+        
+        "evidenceLookup": "root:evidenceLookup",
+        
+        "evidenceSubject": "root:evidenceSubject"
+      }
+    },
+    
+    "EvidenceDocument2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#EvidenceDocument2023",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "root": "https://getportabl.github.io/vc-extensions-vocab#",
+        
+        "mime-type": "root:mimeType",
+        
+        "name": "root:name",
+        
+        "size": "root:size",
+        
+        "timestamp": "root:timestamp",
+        
+        "documentSide": "root:documentSide"
+      }
+    },
+    
+    "EvidenceLookup2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#EvidenceLookup2023",
+      "@context": {
+        "@version": 1.1,
+        "@protected": true,
+
+        "id": "@id",
+        "type": "@type",
+
+        "root": "https://getportabl.github.io/vc-extensions-vocab#",
+        
+        "name": "root:name"
+      }
+    } 
   }
 }
