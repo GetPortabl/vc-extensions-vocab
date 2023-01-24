@@ -23,14 +23,14 @@
         
         "documentPresence": "root:documentPresence",
         
-        "evidenceDocument": "root:evidenceDocument",
+        "provedClaims": "root:provedClaims",
         
-        "evidenceSubject": "root:evidenceSubject"
+        "attachments": "root:attachments"
       }
     },
-    
-    "LookupEvidence2023": {
-      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#LookupEvidence2023",
+ 
+    "VerificationEvidence2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#VerificationEvidence2023",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -42,14 +42,18 @@
         
         "verifier": { "@id": "root:verifier", "@type": "@id" },
         
-        "evidenceLookup": "root:evidenceLookup",
+        "applicationDate": "root:applicationDate",
         
-        "evidenceSubject": "root:evidenceSubject"
+        "decisionDate": "root:decisionDate",
+        
+        "provedClaims": "root:provedClaims",
+        
+        "attachments": "root:attachments"
       }
     },
     
-    "EvidenceDocument2023": {
-      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#EvidenceDocument2023",
+    "EvidenceAttachment2023": {
+      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#EvidenceAttachment2023",
       "@context": {
         "@version": 1.1,
         "@protected": true,
@@ -59,31 +63,14 @@
 
         "root": "https://getportabl.github.io/vc-extensions-vocab#",
         
-        "mime-type": "root:mimeType",
+        "context": "root:context",
+        
+        "mime-type": "root:mime-type",
         
         "name": "root:name",
-        
-        "size": "root:size",
-        
-        "timestamp": "root:timestamp",
-        
-        "documentSide": "root:documentSide"
+  
+        "size": "root:size"
       }
-    },
-    
-    "EvidenceLookup2023": {
-      "@id": "https://getportabl.github.io/vc-extensions-vocab/contexts/vc-extensions-v1.jsonld#EvidenceLookup2023",
-      "@context": {
-        "@version": 1.1,
-        "@protected": true,
-
-        "id": "@id",
-        "type": "@type",
-
-        "root": "https://getportabl.github.io/vc-extensions-vocab#",
-        
-        "name": "root:name"
-      }
-    } 
+    }
   }
 }
