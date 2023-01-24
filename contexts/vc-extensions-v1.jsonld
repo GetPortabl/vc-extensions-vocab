@@ -21,7 +21,7 @@
         
         "subjectPresence": "root:subjectPresence",
         
-        "documentPresence": "root:documentPresence"
+        "documentPresence": "root:documentPresence",
         
         "evidenceDocument": "root:evidenceDocument",
         
